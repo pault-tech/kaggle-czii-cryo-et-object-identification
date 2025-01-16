@@ -45,11 +45,12 @@
       },
       "extensions": [
         // uncomment for vim
-        // "vscodevim.vim",
+         "kahole.magit",
+         "vscodevim.vim",
         //
         // uncomment for vspacecode
         // NOTE: vscpace code doesnt seem to work with vim extension 2025 jan
-        // "VSpaceCode.vspacecode",
+         "VSpaceCode.vspacecode"
         //
         //"ms-dotnettools.vscode-dotnet-runtime",
         //
