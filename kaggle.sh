@@ -27,6 +27,7 @@ cp /workspaces/dotfiles/.profile_golang ~/.profile #NOTE s3 devcontainer image .
 
 mkdir -p ~/.config/kaggle
 cp ~/src/kaggle.json ~/.config/kaggle/
+cp ~/kaggle.json ~/.config/kaggle/
 chmod 600 ~/.config/kaggle/kaggle.json
 
 # kaggle kernels pull gusthema/parkinson-s-disease-progression-prediction-w-tfdf
@@ -76,8 +77,11 @@ jupyter notebook
 curl localhost:8888
 echo done
 
-mkdir mykernel
-kaggle kernels init --path mykernel
+kernelname="mykernel"
+mkdir $kernelname
+set -x
+kaggle kernels init --path $kernelname
+set +x
 
 # metadata required for subsequent push
 kaggle kernels pull --metadata pt1001/parkinson-s-disease-progression-prediction-w-tfdf
