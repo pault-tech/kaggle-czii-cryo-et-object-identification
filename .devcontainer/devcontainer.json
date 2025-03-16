@@ -82,7 +82,7 @@
     "6080": {
       "label": "desktop"
     }
-  }
+  },
 
   // jupytext converts notebooks to py automatically on-open in spacemacs
   "postCreateCommand": "pip install --user kaggle && pip install --user jupytext; sudo chgrp vscode /var/run/docker.sock" //workaround permission denied error
