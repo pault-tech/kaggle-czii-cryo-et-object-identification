@@ -8,6 +8,7 @@
   //"image": "gcr.io/kaggle-images/python:latest",
   //"image": "mcr.microsoft.com/devcontainers/python:0-3.10", //NOTE: does not include sshd
   //"image": "mcr.microsoft.com/devcontainers/go:0-1-bullseye",
+
   "features": {
     // uncomment for sshd in python
     //"ghcr.io/devcontainers/features/sshd:1": {"version": "latest"}       
@@ -15,9 +16,10 @@
     // "ghcr.io/devcontainers/features/docker-in-docker:2": {}, //DiD appears to be in universal
     "ghcr.io/audacioustux/devcontainers/tilt:1": {},
 
-    "ghcr.io/devcontainers/features/desktop-lite:1": {},
+    // "ghcr.io/devcontainers/features/desktop-lite:1": {},
     "ghcr.io/eliises/devcontainer-features/devcontainers-cli:1": {"version": "latest"}
   },
+
   "customizations": {
     "codespaces": {
       "repositories": {
@@ -26,6 +28,7 @@
         }
       }
     },
+       
     "vscode": {
       "settings": {
         //spacemacs in terminal tweaks 
